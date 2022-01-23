@@ -1,0 +1,11 @@
+<div id="map" class="map-container"> </div>
+<div id="toolbar" class="toolbar-container">
+  <div class="btn-bg" [ngClass]="isLeft ? 'left' : 'right'">
+  </div>
+  <div (click)="resetMode()" class="btn btn-left">
+    reset data
+  </div>
+  <div (click)="celularMode()" class="btn btn-right">
+    {{isLeft ? 'show' : 'hide'}} towers
+  </div>
+</div>

@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9e824422-70cd-4139-97d7-7695d67fca88"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,9 +34,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "./node_modules/mapbox-gl/dist/mapbox-gl.css",
+              "src/assets/mapbox-gl-directions.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/mapbox-gl-directions.js"
+            ]
           },
           "configurations": {
             "production": {
